@@ -70,6 +70,7 @@
             margin-bottom: 20px;
             background: linear-gradient(135deg, #FFC107 0%, #FF6B6B 100%);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: gradientShift 5s ease-in-out infinite;
         }
@@ -171,7 +172,8 @@
 
         .phone-frame {
             width: 300px;
-            height: 600px;
+            /* dopasowanie do typowego proporcji ekranu (ok. 19.5:9) by zlikwidować puste marginesy */
+            aspect-ratio: 9 / 19.5;
             background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
             border-radius: 40px;
             padding: 15px;
@@ -201,12 +203,20 @@
             overflow: hidden;
             background: #000;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .phone-screen img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: cover; /* wypełnia ramkę, minimalne przycięcie zamiast dużych marginesów */
+            position: absolute;
+            top: 0; left: 0;
+            opacity: 1; /* zawsze widoczny bo statyczny */
+            transition: none;
+            background: #000;
         }
 
         .glow-effect {
@@ -389,23 +399,91 @@
         }
 
         .screenshot-item {
-            border-radius: 20px;
+            position: relative;
+            border-radius: 28px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            transition: all 0.4s ease;
             cursor: pointer;
+            background: linear-gradient(145deg, #111, #222);
+            padding: 14px 14px 26px;
         }
 
+        .screenshot-item::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 28px;
+            padding: 1px;
+            background: linear-gradient(135deg, rgba(255,193,7,0.4), rgba(255,107,107,0.3));
+            -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+            mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+            -webkit-mask-composite: xor; /* Safari */
+            mask-composite: exclude; /* Others */
+            opacity: 0;
+            transition: opacity .4s ease;
+        }
+
+        .screenshot-item:hover::before { opacity: 1; }
+
         .screenshot-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 20px 40px rgba(255, 193, 7, 0.2);
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 25px 50px -10px rgba(255, 193, 7, 0.25);
         }
 
         .screenshot-item img {
             width: 100%;
             height: auto;
             display: block;
+            border-radius: 20px;
         }
+
+        .screenshot-caption {
+            position: absolute;
+            left: 0; right: 0; bottom: 4px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            letter-spacing: .5px;
+            opacity: .7;
+        }
+
+        /* Lightbox */
+        .lightbox-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.85);
+            backdrop-filter: blur(6px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .35s ease;
+        }
+
+        .lightbox-overlay.visible { opacity: 1; pointer-events: auto; }
+
+        .lightbox-content {
+            max-width: 420px;
+            width: 90%;
+            aspect-ratio: 9/19.5;
+            position: relative;
+            border-radius: 36px;
+            padding: 18px;
+            background: linear-gradient(160deg,#2a2a2a,#121212);
+            box-shadow: 0 20px 80px -10px rgba(255,193,7,.25),0 0 0 1px rgba(255,255,255,.08);
+            overflow: hidden;
+            animation: pop .5s cubic-bezier(.22,.98,.32,1.12);
+        }
+
+        @keyframes pop { from { transform: scale(.85) translateY(20px); opacity: 0;} to { transform: scale(1) translateY(0); opacity: 1;} }
+
+        .lightbox-content img { width:100%; height:100%; object-fit: cover; border-radius: 24px; }
+        .lightbox-close {
+            position: absolute; top: 10px; right: 14px; background: rgba(0,0,0,.5); border: 1px solid rgba(255,255,255,.2); color:#fff; width:40px; height:40px; border-radius:12px; font-size:22px; cursor:pointer; display:flex; align-items:center; justify-content:center; backdrop-filter: blur(4px);}
+        .lightbox-close:hover { background: rgba(255,193,7,0.25); }
 
         /* CTA Section */
         .cta-section {
@@ -517,8 +595,8 @@
                 <div class="hero-phone">
                     <div class="phone-frame">
                         <div class="glow-effect"></div>
-                        <div class="phone-screen">
-                            <img src="IMG_0005.PNG?width=375&format=png&auto=webp&s=e90e3c0f690c0f1af9f3297e7e4f69ad75fb86f8" alt="SpoknLog App Screenshot">
+                        <div class="phone-screen" id="heroScreen">
+                            <img src="pics/IMG_0020.PNG" alt="Ekran aplikacji" loading="eager">
                         </div>
                     </div>
                 </div>
@@ -607,18 +685,30 @@
                 <h2>Zobacz aplikację w akcji</h2>
                 <p class="subtitle">Intuicyjny interfejs dostosowany do Twoich potrzeb</p>
             </div>
-            <div class="screenshot-grid">
-                <div class="screenshot-item fade-in">
-                    <img src="IMG_0005.PNG?width=375&format=png&auto=webp&s=e90e3c0f690c0f1af9f3297e7e4f69ad75fb86f8" alt="SpoknLog - Główny ekran">
+            <div class="screenshot-grid" id="gallery">
+                <div class="screenshot-item fade-in" data-img="pics/IMG_0007.PNG" data-alt="Szybkie logowanie głosowe">
+                    <img src="pics/IMG_0007.PNG" alt="Szybkie logowanie głosowe" loading="lazy">
+                    <div class="screenshot-caption"></div>
                 </div>
-                <div class="screenshot-item fade-in">
-                    <img src="IMG_0005.PNG?width=375&format=png&auto=webp&s=e90e3c0f690c0f1af9f3297e7e4f69ad75fb86f8" alt="SpoknLog - Notatki głosowe">
+                <div class="screenshot-item fade-in" data-img="pics/IMG_0014.PNG" data-alt="Widok listy notatek">
+                    <img src="pics/IMG_0014.PNG" alt="Notatki" loading="lazy">
+                    <div class="screenshot-caption">Notatki</div>
                 </div>
-                <div class="screenshot-item fade-in">
-                    <img src="IMG_0005.PNG?width=375&format=png&auto=webp&s=e90e3c0f690c0f1af9f3297e7e4f69ad75fb86f8" alt="SpoknLog - Dziennik żywieniowy">
+                <div class="screenshot-item fade-in" data-img="pics/IMG_0015.PNG" data-alt="Dziennik żywieniowy">
+                    <img src="pics/IMG_0015.PNG" alt="Dziennik żywieniowy" loading="lazy">
+                    <div class="screenshot-caption">Dziennik żywieniowy</div>
                 </div>
-                <div class="screenshot-item fade-in">
-                    <img src="IMG_0005.PNG?width=375&format=png&auto=webp&s=e90e3c0f690c0f1af9f3297e7e4f69ad75fb86f8" alt="SpoknLog - Zadania">
+                <div class="screenshot-item fade-in" data-img="pics/IMG_0017.PNG" data-alt="Lista zadań">
+                    <img src="pics/IMG_0017.PNG" alt="Zadania" loading="lazy">
+                    <div class="screenshot-caption">Zadania</div>
+                </div>
+                <div class="screenshot-item fade-in" data-img="pics/IMG_0018.PNG" data-alt="Analizy i statystyki">
+                    <img src="pics/IMG_0018.PNG" alt="Analizy" loading="lazy">
+                    <div class="screenshot-caption">Analizy</div>
+                </div>
+                <div class="screenshot-item fade-in" data-img="pics/IMG_0019.PNG" data-alt="Wyszukiwanie kontekstowe">
+                    <img src="pics/IMG_0019.PNG" alt="Wyszukiwanie" loading="lazy">
+                    <div class="screenshot-caption">Wyszukiwanie</div>
                 </div>
             </div>
         </div>
@@ -642,12 +732,12 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 SpoknLog. Wszystkie prawa zastrzeżone. | Bo życie jest zbyt cenne, żeby o czymkolwiek zapomnieć.</p>
+            <p>&copy; 2025 SpoknLog. Wszystkie prawa zastrzeżone. | Bo życie jest zbyt cenne, żeby o czymkolwiek zapomnieć.</p>
         </div>
     </footer>
 
     <script>
-        // Intersection Observer for fade-in animations
+    // Intersection Observer for fade-in animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
@@ -752,6 +842,36 @@
                 card.style.setProperty('--mouse-x', `${x}px`);
                 card.style.setProperty('--mouse-y', `${y}px`);
             });
+        });
+
+    // Rotacja ekranów usunięta – statyczny screenshot
+
+        // Lightbox implementation
+        const gallery = document.getElementById('gallery');
+        const overlay = document.createElement('div');
+        overlay.className = 'lightbox-overlay';
+        overlay.innerHTML = `\n            <div class="lightbox-content">\n                <button class="lightbox-close" aria-label="Zamknij">&times;</button>\n                <img src="" alt="Podgląd">\n            </div>`;
+        document.body.appendChild(overlay);
+        const overlayImg = overlay.querySelector('img');
+        const closeBtn = overlay.querySelector('.lightbox-close');
+
+        function openLightbox(src, alt){
+            overlayImg.src = src;
+            overlayImg.alt = alt;
+            overlay.classList.add('visible');
+        }
+        function closeLightbox(){
+            overlay.classList.remove('visible');
+            overlayImg.src = '';
+        }
+        closeBtn.addEventListener('click', closeLightbox);
+        overlay.addEventListener('click', e => { if(e.target === overlay) closeLightbox(); });
+        document.addEventListener('keydown', e => { if(e.key==='Escape') closeLightbox(); });
+
+        gallery.querySelectorAll('.screenshot-item').forEach(item => {
+            item.addEventListener('click', () => {
+                openLightbox(item.dataset.img, item.dataset.alt || 'Podgląd');
+            })
         });
     </script>
 </body>

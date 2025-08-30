@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpoknLog - Twój Inteligentny Asystent Osobisty</title>
+    <title>SpoknLog - Inteligentny Notatnik Głosowy z AI | Twój Drugi Mózg</title>
+    <meta name="description" content="Mów do telefonu, a SpoknLog zapamięta wszystko. Notatki głosowe z AI. Bez pisania, bez chaosu. 50 interakcji gratis.">
+    <meta name="keywords" content="notatnik głosowy, dyktafon z AI, notatki głosowe, aplikacja do notatek, zarządzanie zadaniami głosem, voice notes, AI assistant">
+    
+    <!-- Open Graph dla social media -->
+    <meta property="og:title" content="SpoknLog - Przestań zapominać, zacznij mówić">
+    <meta property="og:description" content="Twój inteligentny notatnik głosowy. Mów naturalnie, a AI zajmie się resztą. 50 interakcji gratis!">
+    <meta property="og:image" content="https://spoknlog.com/pics/IMG_0020.PNG">
+    <meta property="og:url" content="https://spoknlog.com">
+    <meta property="og:type" content="website">
+    
     <style>
         * {
             margin: 0;
@@ -172,7 +182,6 @@
 
         .phone-frame {
             width: 300px;
-            /* dopasowanie do typowego proporcji ekranu (ok. 19.5:9) by zlikwidować puste marginesy */
             aspect-ratio: 9 / 19.5;
             background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
             border-radius: 40px;
@@ -211,10 +220,10 @@
         .phone-screen img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* wypełnia ramkę, minimalne przycięcie zamiast dużych marginesów */
+            object-fit: cover;
             position: absolute;
             top: 0; left: 0;
-            opacity: 1; /* zawsze widoczny bo statyczny */
+            opacity: 1;
             transition: none;
             background: #000;
         }
@@ -418,8 +427,8 @@
             background: linear-gradient(135deg, rgba(255,193,7,0.4), rgba(255,107,107,0.3));
             -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
             mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-            -webkit-mask-composite: xor; /* Safari */
-            mask-composite: exclude; /* Others */
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
             opacity: 0;
             transition: opacity .4s ease;
         }
@@ -579,16 +588,17 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>SpoknLog</h1>
-                    <p class="subtitle">Twój Inteligentny Asystent Osobisty zzz</p>
+                    <p class="subtitle">Twój Drugi Mózg w Kieszeni</p>
                     <p class="hero-description">
-                        Po prostu mów, a my zapamiętamy wszystko. Nowoczesna aplikacja, która rewolucjonizuje sposób zarządzania codziennym życiem dzięki mocy AI.
+                        Przestań zapominać. Mów do telefonu jak do przyjaciela, a SpoknLog zapamięta wszystko za Ciebie. 
+                        Notatki, zadania, pomysły - wszystko w jednym miejscu, dostępne na zawołanie.
                     </p>
                     <div class="cta-buttons">
                         <a href="#" class="btn btn-primary">
-                            📱 Pobierz teraz
+                            🍎 App Store (wkrótce)
                         </a>
                         <a href="#features" class="btn btn-secondary">
-                            Dowiedz się więcej
+                            Zobacz jak działa
                         </a>
                     </div>
                 </div>
@@ -596,7 +606,7 @@
                     <div class="phone-frame">
                         <div class="glow-effect"></div>
                         <div class="phone-screen" id="heroScreen">
-                            <img src="pics/IMG_0020.PNG" alt="Ekran aplikacji" loading="eager">
+                            <img src="pics/IMG_0020.PNG" alt="SpoknLog - ekran główny" loading="eager">
                         </div>
                     </div>
                 </div>
@@ -608,39 +618,39 @@
     <section class="features" id="features">
         <div class="container">
             <div class="section-header">
-                <h2>Wszystko czego potrzebujesz w jednym miejscu</h2>
-                <p class="subtitle">Odkryj możliwości, które zmienią Twoje codzienne życie</p>
+                <h2>Koniec z chaosem w głowie</h2>
+                <p class="subtitle">Jeden przycisk. Nieskończone możliwości.</p>
             </div>
             <div class="feature-grid">
                 <div class="feature-card fade-in">
-                    <div class="feature-icon">🗣️</div>
-                    <h3>Naturalna komunikacja</h3>
-                    <p>Mów lub pisz naturalnie - nasza AI automatycznie zrozumie kontekst i odpowiednio skategoryzuje Twoje wpisy.</p>
+                    <div class="feature-icon">🎙️</div>
+                    <h3>Mów, nie pisz</h3>
+                    <p>Naciśnij i mów. To wszystko. Żadnego pisania, żadnych formularzy. Nagraj myśl w 3 sekundy zamiast pisać ją minutę.</p>
                 </div>
                 <div class="feature-card fade-in">
                     <div class="feature-icon">🧠</div>
-                    <h3>Inteligentne notatki</h3>
-                    <p>Zapisuj myśli, emocje i pomysły. Aplikacja automatycznie taguje i organizuje każdy wpis dla łatwego dostępu.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">🥗</div>
-                    <h3>Dziennik żywieniowy</h3>
-                    <p>Loguj posiłki mówiąc naturalnie. Otrzymuj analizy makroskładników i śledź swoje cele żywieniowe bez wysiłku.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">✅</div>
-                    <h3>Zarządzanie zadaniami</h3>
-                    <p>Dodawaj zadania naturalnym językiem, oznaczaj jako wykonane jednym słowem. Prostota w najlepszym wydaniu.</p>
+                    <h3>AI która Cię rozumie</h3>
+                    <p>"Kupiłem mleko", "Spotkanie z Markiem w piątek", "Pomysł na aplikację" - SpoknLog sam wie gdzie to zapisać.</p>
                 </div>
                 <div class="feature-card fade-in">
                     <div class="feature-icon">🔍</div>
-                    <h3>Inteligentne wyszukiwanie</h3>
-                    <p>Znajdź każdą informację z przeszłości pytając prostymi słowami. Twoja pamięć nigdy nie zawiedzie.</p>
+                    <h3>Zapytaj o wszystko</h3>
+                    <p>"Co mówiłem o projekcie?", "Kiedy ostatnio byłem u dentysty?" - dostaniesz odpowiedź w sekundę.</p>
                 </div>
                 <div class="feature-card fade-in">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Pełna prywatność</h3>
-                    <p>Twoje dane należą tylko do Ciebie. Aplikacja działa lokalnie, bez wysyłania informacji na zewnętrzne serwery.</p>
+                    <div class="feature-icon">✅</div>
+                    <h3>Zero komplikacji</h3>
+                    <p>Bez kategorii do wyboru. Bez folderów. Bez tagów. Po prostu mów, a my się wszystkim zajmiemy.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🔐</div>
+                    <h3>100% prywatności</h3>
+                    <p>Bez rejestracji. Bez emaila. Bez śledzenia. Twoje myśli należą tylko do Ciebie.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Działa błyskawicznie</h3>
+                    <p>Otwórz → Nagraj → Gotowe. Szybciej niż otworzenie notatnika. Wygodniej niż pisanie.</p>
                 </div>
             </div>
         </div>
@@ -650,29 +660,29 @@
     <section class="how-it-works">
         <div class="container">
             <div class="section-header">
-                <h2>Jak to działa?</h2>
-                <p class="subtitle">Prostota obsługi to nasza filozofia</p>
+                <h2>Prostsze niż myślisz</h2>
+                <p class="subtitle">30 sekund i już działasz</p>
             </div>
             <div class="steps">
                 <div class="step fade-in">
                     <div class="step-number">1</div>
-                    <h3>Mów naturalnie</h3>
-                    <p>Naciśnij przycisk i powiedz co masz na myśli - tak jak mówisz do przyjaciela</p>
+                    <h3>Naciśnij i mów</h3>
+                    <p>Jeden przycisk. Powiedz co masz na myśli - dokładnie tak jak przychodzi Ci to do głowy</p>
                 </div>
                 <div class="step fade-in">
                     <div class="step-number">2</div>
-                    <h3>AI rozumie kontekst</h3>
-                    <p>Nasza sztuczna inteligencja automatycznie kategoryzuje i organizuje Twoje wpisy</p>
+                    <h3>AI ogarnia resztę</h3>
+                    <p>Automatyczna transkrypcja, kategoryzacja i zapisanie. Zero wysiłku z Twojej strony</p>
                 </div>
                 <div class="step fade-in">
                     <div class="step-number">3</div>
-                    <h3>Wszystko w jednym miejscu</h3>
-                    <p>Masz dostęp do wszystkich informacji, zadań i wspomnień kiedy tylko potrzebujesz</p>
+                    <h3>Masz to kiedy chcesz</h3>
+                    <p>Wszystkie Twoje myśli, notatki i zadania w jednym miejscu. Zawsze pod ręką</p>
                 </div>
                 <div class="step fade-in">
                     <div class="step-number">4</div>
-                    <h3>Otrzymuj wsparcie</h3>
-                    <p>Zadaj pytanie, a otrzymasz spersonalizowaną odpowiedź opartą na Twoich danych</p>
+                    <h3>Pytaj swój mózg</h3>
+                    <p>"Co jest do zrobienia?", "O czym rozmawiałem z szefem?" - odpowiedzi w sekundę</p>
                 </div>
             </div>
         </div>
@@ -682,33 +692,33 @@
     <section class="screenshots">
         <div class="container">
             <div class="section-header">
-                <h2>Zobacz aplikację w akcji</h2>
-                <p class="subtitle">Intuicyjny interfejs dostosowany do Twoich potrzeb</p>
+                <h2>Zobacz SpoknLog w akcji</h2>
+                <p class="subtitle">Minimalizm spotyka inteligencję</p>
             </div>
             <div class="screenshot-grid" id="gallery">
-                <div class="screenshot-item fade-in" data-img="pics/IMG_0007.PNG" data-alt="Szybkie logowanie głosowe">
-                    <img src="pics/IMG_0007.PNG" alt="Szybkie logowanie głosowe" loading="lazy">
-                    <div class="screenshot-caption"></div>
+                <div class="screenshot-item fade-in" data-img="pics/IMG_0007.PNG" data-alt="Główny ekran nagrywania">
+                    <img src="pics/IMG_0007.PNG" alt="Główny ekran nagrywania" loading="lazy">
+                    <div class="screenshot-caption">Główny ekran</div>
                 </div>
-                <div class="screenshot-item fade-in" data-img="pics/IMG_0014.PNG" data-alt="Widok listy notatek">
-                    <img src="pics/IMG_0014.PNG" alt="Notatki" loading="lazy">
-                    <div class="screenshot-caption">Notatki</div>
+                <div class="screenshot-item fade-in" data-img="pics/IMG_0014.PNG" data-alt="Historia notatek">
+                    <img src="pics/IMG_0014.PNG" alt="Historia notatek" loading="lazy">
+                    <div class="screenshot-caption">Historia notatek</div>
                 </div>
-                <div class="screenshot-item fade-in" data-img="pics/IMG_0015.PNG" data-alt="Dziennik żywieniowy">
-                    <img src="pics/IMG_0015.PNG" alt="Dziennik żywieniowy" loading="lazy">
-                    <div class="screenshot-caption">Dziennik żywieniowy</div>
+                <div class="screenshot-item fade-in" data-img="pics/IMG_0015.PNG" data-alt="Szczegóły notatki">
+                    <img src="pics/IMG_0015.PNG" alt="Szczegóły notatki" loading="lazy">
+                    <div class="screenshot-caption">Szczegóły</div>
                 </div>
                 <div class="screenshot-item fade-in" data-img="pics/IMG_0017.PNG" data-alt="Lista zadań">
-                    <img src="pics/IMG_0017.PNG" alt="Zadania" loading="lazy">
-                    <div class="screenshot-caption">Zadania</div>
+                    <img src="pics/IMG_0017.PNG" alt="Lista zadań" loading="lazy">
+                    <div class="screenshot-caption">Lista zadań</div>
                 </div>
-                <div class="screenshot-item fade-in" data-img="pics/IMG_0018.PNG" data-alt="Analizy i statystyki">
-                    <img src="pics/IMG_0018.PNG" alt="Analizy" loading="lazy">
-                    <div class="screenshot-caption">Analizy</div>
+                <div class="screenshot-item fade-in" data-img="pics/IMG_0018.PNG" data-alt="Statystyki użytkowania">
+                    <img src="pics/IMG_0018.PNG" alt="Statystyki" loading="lazy">
+                    <div class="screenshot-caption">Statystyki</div>
                 </div>
-                <div class="screenshot-item fade-in" data-img="pics/IMG_0019.PNG" data-alt="Wyszukiwanie kontekstowe">
-                    <img src="pics/IMG_0019.PNG" alt="Wyszukiwanie" loading="lazy">
-                    <div class="screenshot-caption">Wyszukiwanie</div>
+                <div class="screenshot-item fade-in" data-img="pics/IMG_0019.PNG" data-alt="Inteligentne odpowiedzi AI">
+                    <img src="pics/IMG_0019.PNG" alt="Inteligentne odpowiedzi" loading="lazy">
+                    <div class="screenshot-caption">Inteligentne odpowiedzi</div>
                 </div>
             </div>
         </div>
@@ -718,11 +728,11 @@
     <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2>Zacznij już dziś</h2>
-                <p>Dołącz do tysięcy użytkowników, którzy odkryli prostszy sposób na organizację życia</p>
+                <h2>Dołącz do rewolucji</h2>
+                <p>Pierwsze 50 interakcji gratis. Bez karty. Bez zobowiązań.</p>
                 <div class="cta-buttons">
                     <a href="#" class="btn btn-primary" style="background: white; color: var(--dark);">
-                        🚀 Pobierz za darmo
+                        🚀 Testuj za darmo
                     </a>
                 </div>
             </div>
@@ -732,12 +742,12 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 SpoknLog. Wszystkie prawa zastrzeżone. | Bo życie jest zbyt cenne, żeby o czymkolwiek zapomnieć.</p>
+            <p>&copy; 2025 SpoknLog | Twój drugi mózg, zawsze pod ręką | <a href="mailto:info@spoknlog.com" style="color: var(--primary); text-decoration: none;">hello@spoknlog.com</a></p>
         </div>
     </footer>
 
     <script>
-    // Intersection Observer for fade-in animations
+        // Intersection Observer for fade-in animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
@@ -844,13 +854,15 @@
             });
         });
 
-    // Rotacja ekranów usunięta – statyczny screenshot
-
         // Lightbox implementation
         const gallery = document.getElementById('gallery');
         const overlay = document.createElement('div');
         overlay.className = 'lightbox-overlay';
-        overlay.innerHTML = `\n            <div class="lightbox-content">\n                <button class="lightbox-close" aria-label="Zamknij">&times;</button>\n                <img src="" alt="Podgląd">\n            </div>`;
+        overlay.innerHTML = `
+            <div class="lightbox-content">
+                <button class="lightbox-close" aria-label="Zamknij">&times;</button>
+                <img src="" alt="Podgląd">
+            </div>`;
         document.body.appendChild(overlay);
         const overlayImg = overlay.querySelector('img');
         const closeBtn = overlay.querySelector('.lightbox-close');

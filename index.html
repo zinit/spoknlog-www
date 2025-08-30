@@ -181,8 +181,8 @@
         }
 
         .phone-frame {
-            width: 300px;
-            aspect-ratio: 9 / 19.5;
+            width: 320px; /* Zwiększam szerokość dla bardziej naturalnego wyglądu */
+            aspect-ratio: 750 / 1334; /* Dokładne proporcje naszych screenshotów */
             background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
             border-radius: 40px;
             padding: 15px;
@@ -221,6 +221,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: center;
             position: absolute;
             top: 0; left: 0;
             opacity: 1;
@@ -402,9 +403,12 @@
 
         .screenshot-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
             margin-top: 60px;
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .screenshot-item {
@@ -416,6 +420,7 @@
             cursor: pointer;
             background: linear-gradient(145deg, #111, #222);
             padding: 14px 14px 26px;
+            aspect-ratio: 750 / 1334; /* Zachowaj oryginalne proporcje iPhone */
         }
 
         .screenshot-item::before {
@@ -442,7 +447,9 @@
 
         .screenshot-item img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
             display: block;
             border-radius: 20px;
         }
@@ -477,7 +484,6 @@
         .lightbox-content {
             max-width: 420px;
             width: 90%;
-            aspect-ratio: 9/19.5;
             position: relative;
             border-radius: 36px;
             padding: 18px;
@@ -485,11 +491,21 @@
             box-shadow: 0 20px 80px -10px rgba(255,193,7,.25),0 0 0 1px rgba(255,255,255,.08);
             overflow: hidden;
             animation: pop .5s cubic-bezier(.22,.98,.32,1.12);
+            display: flex;
+            flex-direction: column;
         }
 
         @keyframes pop { from { transform: scale(.85) translateY(20px); opacity: 0;} to { transform: scale(1) translateY(0); opacity: 1;} }
 
-        .lightbox-content img { width:100%; height:100%; object-fit: cover; border-radius: 24px; }
+        .lightbox-content img { 
+            width: 100%; 
+            height: auto; /* Pozwól obrazowi mieć naturalną wysokość */
+            object-fit: contain;
+            object-position: center;
+            border-radius: 24px; 
+            background: #000;
+            display: block;
+        }
         .lightbox-close {
             position: absolute; top: 10px; right: 14px; background: rgba(0,0,0,.5); border: 1px solid rgba(255,255,255,.2); color:#fff; width:40px; height:40px; border-radius:12px; font-size:22px; cursor:pointer; display:flex; align-items:center; justify-content:center; backdrop-filter: blur(4px);}
         .lightbox-close:hover { background: rgba(255,193,7,0.25); }
@@ -555,8 +571,8 @@
             }
 
             .phone-frame {
-                width: 250px;
-                height: 500px;
+                width: 280px; /* Większy na mobile dla lepszej proporcji */
+                margin: 0 auto;
             }
 
             .cta-buttons {
@@ -565,6 +581,51 @@
 
             .feature-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .screenshot-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .screenshot-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .phone-frame {
+                width: 240px; /* Proporcjonalnie na bardzo małych ekranach */
+            }
+
+            .screenshot-item {
+                padding: 12px 12px 22px;
+            }
+
+            .lightbox-content {
+                max-width: 95%;
+                width: 95%;
+                max-height: 90vh;
+            }
+
+            .lightbox-content img {
+                max-height: 85vh; /* Ograniczenie wysokości na mobilnych */
+            }
+        }
+
+        @media (max-width: 320px) {
+            .lightbox-content {
+                max-width: 100%;
+                width: 100%;
+                padding: 12px;
+                border-radius: 20px;
+                max-height: 95vh;
+            }
+
+            .lightbox-content img {
+                border-radius: 16px;
+                max-height: 90vh;
             }
         }
 

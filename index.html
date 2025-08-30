@@ -558,6 +558,22 @@
             color: var(--text-secondary);
         }
 
+        .footer-nav {
+            margin-bottom: 20px;
+        }
+
+        .footer-nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-nav a:hover {
+            color: var(--primary);
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .hero-content {
@@ -612,6 +628,11 @@
             .lightbox-content img {
                 max-height: 85vh; /* Ograniczenie wysokości na mobilnych */
             }
+
+            .footer-nav a {
+                margin: 0 10px;
+                font-size: 0.85rem;
+            }
         }
 
         @media (max-width: 320px) {
@@ -626,6 +647,12 @@
             .lightbox-content img {
                 border-radius: 16px;
                 max-height: 90vh;
+            }
+
+            .footer-nav a {
+                display: block;
+                margin: 5px 0;
+                font-size: 0.8rem;
             }
         }
 
@@ -803,7 +830,12 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 SpoknLog | Twój drugi mózg, zawsze pod ręką | <a href="mailto:info@spoknlog.com" style="color: var(--primary); text-decoration: none;">info@spoknlog.com</a></p>
+            <div class="footer-nav">
+                <a href="terms/">Regulamin</a>
+                <a href="policy/">Polityka Prywatności</a>
+                <a href="mailto:info@spoknlog.com">Kontakt</a>
+            </div>
+            <p>&copy; 2025 SpoknLog | Twój drugi mózg, zawsze pod ręką</p>
         </div>
     </footer>
 

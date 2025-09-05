@@ -1,0 +1,126 @@
+POLITYKA PRYWATNOŚCI APLIKACJI SPOKNLOG 🔐
+Data wejścia w życie: 01.09.2025
+
+## §1. Wprowadzenie
+1. Niniejsza Polityka Prywatności opisuje sposób przetwarzania danych osobowych przez Daniel Loposzko (dalej „Administrator”) w aplikacji mobilnej SpoknLog (dalej „Aplikacja”).
+
+2. Korzystanie z Aplikacji oznacza akceptację niniejszej Polityki. Podstawy prawne przetwarzania wskazano w §4; w przypadkach wymagających zgody poprosimy o nią odrębnie w Aplikacji.
+
+3. Administrator dokłada starań w zakresie ochrony danych; w zakresie dopuszczalnym przez prawo nie odpowiada za naruszenia bezpieczeństwa spowodowane działaniami osób trzecich lub siłą wyższą.
+
+## §2. Administrator Danych
+**Administrator:** Daniel Loposzko, Kobierzyce, ul. Sportowa 35, e-mail: info@spoknlog.com
+**Kontakt w sprawach danych osobowych:** wyłącznie na adres info@spoknlog.com
+**Inspektor Ochrony Danych (IOD):** Administrator nie wyznaczył IOD; w sprawach ochrony danych prosimy o kontakt na ww. adres.
+
+## §3. Zakres Przetwarzanych Danych
+
+### 3.1 Dane Konta
+- **Imię** (opcjonalne) – dla personalizacji interfejsu i komunikacji osobowej z asystentem 
+- **Unikalny identyfikator (UUID)** – do identyfikacji konta i synchronizacji danych
+
+### 3.2 Treści Użytkownika
+- Notatki głosowe i tekstowe wprowadzane przez Użytkownika
+- **Zastrzeżenie:** Użytkownik ponosi wyłączną odpowiedzialność za legalność wprowadzanych treści
+
+### 3.3 Dane Techniczne
+- Adres IP
+- Logi błędów i dane analityczne
+- **Cel:** bezpieczeństwo, diagnostyka, rozwój Aplikacji
+
+### 3.4 Przetwarzanie przez AI
+1. **Treści mogą być przetwarzane przez systemy sztucznej inteligencji** w celu:
+   - wektoryzacji i indeksowania (lokalnie na urządzeniu),
+   - generowania podsumowań i odpowiedzi (przez zewnętrznych dostawców AI).
+
+2. **Zastrzeżenia i informacje:**
+   - Przetwarzanie przez AI odbywa się m.in. na podstawie prawnie uzasadnionego interesu Administratora.
+   - Administrator może zmieniać dostawców AI bez uprzedzenia.
+   - Administrator korzysta z podmiotów przetwarzających na podstawie umów powierzenia; podmioty te przetwarzają dane wyłącznie na polecenie Administratora. Administrator pozostaje odpowiedzialny za wybór i nadzór nad tymi podmiotami w zakresie wymaganym prawem.
+   - Zakres danych przesyłanych do dostawców AI może się zmieniać wraz z rozwojem funkcjonalności.
+
+### 3.5 Dane Zdrowotne i Fitness
+- Informacje o posiłkach, kaloriach i makroskładnikach
+- Dane o samopoczuciu i emocjach (wyłącznie do celów śledzenia osobistego)
+**Zastrzeżenie:** Dane te nie są wykorzystywane do celów medycznych. Aplikacja nie zastępuje profesjonalnej porady medycznej, dietetycznej czy psychologicznej.
+
+## §4. Podstawa Prawna
+Dane przetwarzamy na podstawie:
+- **art. 6 ust. 1 lit. b RODO** – wykonanie umowy (świadczenie usług Aplikacji),
+- **art. 6 ust. 1 lit. f RODO** – prawnie uzasadniony interes (bezpieczeństwo, rozwój, analityka),
+- **art. 6 ust. 1 lit. a RODO** – zgoda (w przypadkach wymagających wyrażenia zgody).
+
+## §5. Okres Przechowywania
+1. Dane konta i treści: do momentu usunięcia konta przez Użytkownika
+2. Dane techniczne: maksymalnie 24 miesiące
+3. Po usunięciu konta dane są trwale kasowane w ciągu 30 dni
+4. Administrator zastrzega sobie prawo do wcześniejszego usunięcia danych z przyczyn technicznych lub biznesowych.
+
+## §6. Udostępnianie Danych
+
+### 6.1 Podmioty Uprawnione
+Dane mogą być udostępniane:
+- dostawcom usług hostingowych (serwery w UE/EOG),
+- dostawcom technologii AI (np. OpenAI, Google) jako podmiotom przetwarzającym,
+- dostawcom usług technicznych wspierających działanie Aplikacji,
+- organom państwowym – na podstawie obowiązujących przepisów.
+
+### 6.2 Transfer Międzynarodowy
+1. **Dane mogą być przekazywane poza EOG** w związku z korzystaniem z usług dostawców AI.
+2. Administrator stosuje odpowiednie zabezpieczenia (m.in. standardowe klauzule umowne) oraz – w miarę potrzeby – dodatkowe środki ochrony.
+3. Transfer odbywa się na podstawie decyzji o adekwatności, standardowych klauzul umownych lub innych dostępnych mechanizmów prawnych.
+
+Korzystamy z usług:
+- OpenAI (USA) - przetwarzanie języka naturalnego, transkrypcja audio (speech-to-text)
+- Google Cloud (USA/UE) - przetwarzanie języka naturalnego, synteza mowy (text-to-speech)
+Transfer odbywa się na podstawie standardowych klauzul umownych.
+
+## §7. Prawa Użytkownika
+Przysługują Ci następujące prawa (z zastrzeżeniami technicznymi i prawnymi):
+1) **dostęp do danych** – w zakresie technicznie możliwym,
+2) **sprostowanie danych** – poprzez edycję w Aplikacji,
+3) **usunięcie danych** – poprzez funkcje Aplikacji,
+4) **ograniczenie przetwarzania**,
+5) **przenoszenie danych** – w dostępnych formatach eksportu,
+6) **sprzeciw wobec przetwarzania** – może skutkować ograniczeniem funkcjonalności,
+7) **wycofanie zgody** – w przypadkach przetwarzania na podstawie zgody.
+**Czas realizacji:** do 30 dni (z możliwością przedłużenia o kolejne 60 dni w przypadkach złożonych).
+**Dodatkowo:** Aplikacja nie podejmuje decyzji wywołujących skutki prawne lub w podobny istotny sposób wyłącznie na podstawie zautomatyzowanego przetwarzania; możesz żądać interwencji ludzkiej w zakresie technicznie możliwym.
+
+## §8. Bezpieczeństwo Danych
+1. Administrator stosuje adekwatne środki techniczne i organizacyjne.
+2. W zakresie dopuszczalnym przez prawo Administrator nie gwarantuje pełnego bezpieczeństwa danych ani braku awarii; **Użytkownik korzysta z Aplikacji na własne ryzyko.**
+3. W przypadku naruszenia bezpieczeństwa Administrator podejmie działania zgodnie z obowiązującymi przepisami.
+
+## §9. Wykorzystanie Danych do Rozwoju
+1. Administrator może wykorzystywać **zanonimizowane i zagregowane** dane do: analizy sposobu korzystania z Aplikacji, rozwoju funkcjonalności, badań naukowych/komercyjnych oraz – po skutecznej anonimizacji – do trenowania modeli AI.
+2. Dane wykorzystywane są w sposób uniemożliwiający identyfikację konkretnego Użytkownika.
+
+## §10. Automatyczne Podejmowanie Decyzji
+1. Aplikacja może wykorzystywać systemy (w tym AI) do: kategoryzowania treści, rekomendacji i wykrywania nadużyć.
+2. Użytkownik ma prawo żądania interwencji ludzkiej w zakresie technicznie możliwym.
+
+## §11. Zmiany w Polityce
+1. Administrator może zmienić Politykę z następujących powodów: zmiany prawa, technologii, modelu biznesowego, wprowadzenie nowych funkcji.
+2. O istotnych zmianach poinformujemy poprzez komunikat w Aplikacji.
+3. Dalsze korzystanie z Aplikacji oznacza akceptację zmian.
+
+## §12. Skarga do Organu Nadzorczego
+Masz prawo wniesienia skargi do:
+Prezes Urzędu Ochrony Danych Osobowych, ul. Stawki 2, 00-193 Warszawa, https://uodo.gov.pl
+
+## §13. Ochrona Prywatności Dzieci
+Aplikacja nie jest przeznaczona dla osób poniżej 13 roku życia. Nie zbieramy świadomie danych od dzieci. Jeśli jesteś rodzicem i dowiesz się, że Twoje dziecko korzysta z Aplikacji, skontaktuj się z nami.
+
+## §14. Pliki Cookies i Local Storage
+Aplikacja może wykorzystywać local storage do przechowywania preferencji użytkownika i danych sesji. Nie używamy cookies śledzących.
+
+## §15. Postanowienia Końcowe
+1. Polityka podlega prawu polskiemu.
+2. W przypadku sprzeczności między wersjami językowymi, wiążąca jest wersja polska.
+3. Postanowienia Polityki podlegają bezwzględnie obowiązującym przepisom prawa; w razie kolizji pierwszeństwo mają przepisy.
+4. Niewykonalność któregokolwiek postanowienia nie wpływa na ważność pozostałych.
+
+---
+**Kontakt:** info@spoknlog.com
+**Data ostatniej aktualizacji:** 1.09.2025

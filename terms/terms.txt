@@ -1,0 +1,76 @@
+REGULAMIN APLIKACJI SPOKNLOG 📜
+Data wejścia w życie: 1.09.2025
+
+## §1. Postanowienia Ogólne
+1. Niniejszy regulamin (dalej „Regulamin”) określa zasady korzystania z aplikacji mobilnej „SpoknLog” (dalej „Aplikacja”).  
+2. Właścicielem i administratorem Aplikacji jest Daniel Loposzko, zamieszkały w Kobierzycach, ul. Sportowa 35, e-mail kontaktowy: info@spoknlog.com (dalej „Administrator”).  
+3. Korzystanie z Aplikacji, w tym założenie konta, jest równoznaczne z pełną akceptacją niniejszego Regulaminu oraz Polityki Prywatności.  
+4. Aplikacja jest narzędziem typu „notatnik głosowy”, służącym do zapisywania, przechowywania i organizowania notatek Użytkownika, z wykorzystaniem technologii sztucznej inteligencji.  
+5. Aplikacja jest udostępniana bez gwarancji przydatności do określonego celu. Postanowienia dotyczące odpowiedzialności stosuje się z poszanowaniem praw konsumentów.
+6. Użytkownik otrzymuje niewyłączną, nieprzenoszalną, odwołalną licencję na korzystanie z Aplikacji na własnym urządzeniu, wyłącznie zgodnie z Regulaminem. W zakresie Aplikacji na iOS licencja podlega także Apple Media Services Terms i standardowej licencji końcowej Apple (EULA).”
+
+## §2. Warunki Techniczne
+1. Do korzystania z Aplikacji niezbędne jest urządzenie mobilne z dostępem do internetu oraz kompatybilny system operacyjny.  
+2. Administrator nie gwarantuje kompatybilności Aplikacji ze wszystkimi urządzeniami ani ciągłości działania usługi.  
+3. **Użytkownik odpowiada za utrzymanie aktualnych kopii zapasowych swoich danych.** 
+4. Administrator wykonuje kopie zapasowe danych na potrzeby bezpieczeństwa; po usunięciu konta dane mogą występować w backupach do 30 dni.
+
+## §3. Zasady Korzystania z Aplikacji
+1. Korzystanie z podstawowych funkcji Aplikacji może być bezpłatne. Administrator zastrzega prawo do wprowadzenia opłat za funkcje dodatkowe lub subskrypcje oraz do zmiany modelu biznesowego. W przypadku zakupów dokonywanych za pośrednictwem sklepów Apple App Store/Google Play warunki rozliczeń i reklamacji płatności wynikają z regulaminów tych sklepów. W przypadku płatnych funkcji realizowanych przez Apple App Store zastosowanie mają warunki Apple (w tym zasady płatności, zwrotów i rezygnacji). Informacje o cenach i okresach rozliczeń są prezentowane w Aplikacji bezpośrednio przed zakupem. 
+2. Użytkownik zobowiązuje się do korzystania z Aplikacji zgodnie z jej przeznaczeniem, prawem i dobrymi obyczajami.  
+3. **ZABRONIONE JEST:**  
+   – podejmowanie działań zakłócających funkcjonowanie Aplikacji,  
+   – próby uzyskania nieautoryzowanego dostępu,  
+   – używanie Aplikacji do celów niezgodnych z prawem,  
+   – nadużywanie zasobów systemu,  
+   – reverse engineering, dekompilacja lub próby odtworzenia kodu źródłowego.  
+4. **Administrator może zablokować dostęp w przypadku istotnego lub powtarzającego się naruszenia Regulaminu; jeśli to możliwe – po uprzednim powiadomieniu i wskazaniu przyczyny.**
+
+## §4. Odpowiedzialność Użytkownika za Treści
+1. Użytkownik jest wyłącznym właścicielem i ponosi pełną odpowiedzialność za treści („Treści”), które tworzy i przechowuje w Aplikacji.  
+2. Administrator nie ponosi odpowiedzialności za Treści Użytkowników i nie ma obowiązku ich monitorowania.  
+3. Zabronione jest zapisywanie Treści, które: naruszają prawo, prawa osób trzecich, prawa autorskie bez zgody, zawierają dane osobowe osób trzecich bez podstawy prawnej, propagują przemoc/nienawiść/dyskryminację, mają charakter pornograficzny/nieprzyzwoity, zawierają malware lub kod szkodliwy.  
+4. **Użytkownik zobowiązuje się zwolnić Administratora z odpowiedzialności wobec roszczeń osób trzecich wynikających z Treści – w zakresie dopuszczalnym przez prawo konsumenckie.** Powyższe postanowienie nie ogranicza uprawnień konsumentów wynikających z bezwzględnie obowiązujących przepisów.
+5. Użytkownik zachowuje autorskie prawa do Treści. Udziela Administratorowi nieodpłatnej, niewyłącznej licencji na ich przetwarzanie wyłącznie w zakresie niezbędnym do świadczenia usługi i przez czas korzystania z Aplikacji.
+
+## §5. Funkcje Oparte na Sztucznej Inteligencji (AI)
+1. Aplikacja może wykorzystywać technologie AI do przetwarzania Treści.  
+2. **Zastrzeżenia:** wyniki AI mogą być niedokładne, niekompletne lub błędne; AI ma charakter pomocniczy i informacyjny; Administrator nie odpowiada za jakość wyników AI; Użytkownik korzysta z funkcji AI na własne ryzyko; Administrator może w dowolnym czasie zmieniać dostawców AI lub algorytmy.  
+3. **Użytkownik nie powinien polegać na wynikach AI przy podejmowaniu ważnych decyzji bez własnej weryfikacji.**
+
+## §6. Własność Intelektualna
+1. Wszelkie prawa do Aplikacji należą wyłącznie do Administratora.  
+2. Użytkownik udziela Administratorowi nieodpłatnej, niewyłącznej licencji na korzystanie z Treści w zakresie niezbędnym do funkcjonowania Aplikacji **i na czas korzystania z Aplikacji**.  
+3. Zabronione jest kopiowanie, rozpowszechnianie lub wykorzystywanie elementów Aplikacji bez pisemnej zgody Administratora.
+
+## §7. Wyłączenie i Ograniczenie Odpowiedzialności
+1. **ADMINISTRATOR WYŁĄCZA ODPOWIEDZIALNOŚĆ (w najszerszym zakresie dopuszczonym przez prawo) za:** utratę danych, przerwy w działaniu, błędy oprogramowania, działania lub zaniechania osób trzecich, szkody wynikające z korzystania z AI, szkody pośrednie, przypadkowe lub następcze.  
+2. W maksymalnym zakresie dopuszczonym przez prawo odpowiedzialność Administratora jest ograniczona do kwoty 100 PLN; **ograniczenie to nie dotyczy szkody wyrządzonej umyślnie oraz stosuje się z poszanowaniem praw konsumentów.**  
+3. Aplikacja jest świadczona bez gwarancji dostępności, bezpieczeństwa lub przydatności do określonych celów.
+4. Ograniczenia odpowiedzialności stosuje się w najszerszym zakresie dopuszczonym przez prawo i nie wyłączają odpowiedzialności za szkodę wyrządzoną umyślnie oraz praw przysługujących konsumentom.
+
+## §8. Zmiany i Zakończenie Usługi
+1. Administrator może: zmienić funkcjonalności Aplikacji, wprowadzić ograniczenia, zakończyć świadczenie usługi z 30‑dniowym wypowiedzeniem, a w razie naruszenia Regulaminu – zakończyć świadczenie usługi natychmiast.  
+2. W przypadku zakończenia usługi Użytkownik ma 30 dni na pobranie swoich danych, po czym mogą one zostać nieodwracalnie usunięte.
+3. Zmiany Regulaminu mogą następować z ważnych powodów (m.in. zmiana prawa, bezpieczeństwo, zmiany technologiczne/funkcjonalne). Zmiany wchodzą w życie po 30 dniach od poinformowania w Aplikacji lub e-mailem. Użytkownik może rozwiązać umowę przed datą wejścia zmian w życie.
+
+## §9. Ochrona Danych i Prywatność
+1. Szczegółowe zasady określa Polityka Prywatności.  
+2. Administrator może dostosowywać sposób przetwarzania danych zgodnie z aktualizacjami Polityki Prywatności.
+
+## §10. Reklamacje i Wsparcie
+1. Reklamacje: info@spoknlog.com.  
+2. Administrator nie gwarantuje czasu odpowiedzi ani rozwiązania wszystkich problemów technicznych.  
+3. Odpowiadamy niezwłocznie, nie później niż w ciągu 30 dni. Brak odpowiedzi nie ogranicza uprawnień Użytkownika wynikających z bezwzględnie obowiązujących przepisów.
+
+## §11. Zmiany Regulaminu
+1. Administrator może zmienić Regulamin.  
+2. Dalsze korzystanie z Aplikacji po zmianie oznacza akceptację nowych warunków.  
+3. W przypadku braku akceptacji Użytkownik powinien zaprzestać korzystania z Aplikacji.
+
+## §12. Postanowienia Końcowe
+1. Regulamin podlega prawu polskiemu.  
+2. **Wszelkie spory z Użytkownikami niebędącymi konsumentami** rozstrzyga sąd właściwy dla siedziby Administratora. **Spory z konsumentami** podlegają właściwości ogólnej sądów zgodnie z przepisami prawa.  
+3. W przypadku nieważności któregokolwiek postanowienia, pozostałe pozostają w mocy.  
+4. Niniejszy Regulamin stanowi pełną umowę między stronami w zakresie korzystania z Aplikacji.
+5. Konsument może skorzystać z pozasądowej platformy ODR Komisji Europejskiej do rozwiązywania sporów online.

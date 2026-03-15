@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="SpoknLog Privacy Policy"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><!-- Open Graph --><meta property="og:title" content="Privacy Policy"><meta property="og:description" content="SpoknLog Privacy Policy"><meta property="og:image" content="https://spoknlog.com/og-image.png"><meta property="og:url" content="https://spoknlog.com"><meta property="og:type" content="website"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Privacy Policy"><meta name="twitter:description" content="SpoknLog Privacy Policy"><meta name="twitter:image" content="https://spoknlog.com/og-image.png"><title>Privacy Policy</title><link rel="stylesheet" href="/_astro/_lang_.CVyG3vbK.css"></head> <body class="font-sans text-gray-900 antialiased">  <main class="py-6"> <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">  <div class="mb-6"> <h1 class="text-2xl font-bold">Privacy Policy</h1> <p class="text-xs text-gray-400 mt-1">Last updated: March 1, 2026</p> </div> <div class="prose prose-gray max-w-none prose-sm">  <p>This document was originally drafted in Polish. In the event of any discrepancy between language versions, the Polish version shall prevail.</p>
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="SpoknLog Privacy Policy"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><!-- Open Graph --><meta property="og:title" content="Privacy Policy"><meta property="og:description" content="SpoknLog Privacy Policy"><meta property="og:image" content="https://spoknlog.com/og-image.png"><meta property="og:url" content="https://spoknlog.com"><meta property="og:type" content="website"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Privacy Policy"><meta name="twitter:description" content="SpoknLog Privacy Policy"><meta name="twitter:image" content="https://spoknlog.com/og-image.png"><title>Privacy Policy</title><link rel="stylesheet" href="/_astro/_lang_.CPojZ92O.css"></head> <body class="font-sans text-gray-900 antialiased">  <main class="py-6"> <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">  <div class="mb-6"> <h1 class="text-2xl font-bold">Privacy Policy</h1> <p class="text-xs text-gray-400 mt-1">Last updated: March 1, 2026</p> </div> <div class="prose prose-gray max-w-none prose-sm">  <p>This document was originally drafted in Polish. In the event of any discrepancy between language versions, the Polish version shall prevail.</p>
 <h2 id="section-1-data-controller">Section 1. Data Controller</h2>
 <ol>
 <li>The controller of the Users’ personal data is Daniel Loposzko, operating under the business name Zinit Daniel Loposzko, ul. Sportowa 35, 55-040 Kobierzyce, Poland, Tax Identification Number (NIP): 896-116-23-34, Statistical Identification Number (REGON): 021006839 (hereinafter: the “Controller”).</li>
@@ -95,7 +95,7 @@ Voice recordings and transcriptions are processed exclusively within the Microso
 Processed and transformed data (such as note summaries, reformulated questions, search contexts) may be shared with external artificial intelligence service providers for the purpose of generating responses, classifying intent, and creating summaries. This data does not constitute a verbatim reproduction of the User’s utterances but rather a processed form thereof.</p>
 </li>
 <li>
-<p>Voice recordings (audio) are transmitted from the User’s device to the Controller’s server solely for the purpose of obtaining a text transcription. The voice recording is then forwarded to the Azure OpenAI Service (Whisper model) for speech-to-text conversion. The voice recording resides in server memory only for the time necessary to complete the transcription and is then permanently deleted. The Controller does not store, archive, or copy voice recordings.</p>
+<p>Voice recordings (audio) are transmitted from the User’s device to the Controller’s server solely for the purpose of obtaining a text transcription. The voice recording is then forwarded to the Azure OpenAI Service (4o-transcribe / Whisper model) for speech-to-text conversion. The voice recording resides in server memory only for the time necessary to complete the transcription and is then permanently deleted. The Controller does not store, archive, or copy voice recordings.</p>
 </li>
 <li>
 <p>The transcription of a voice recording is processed by artificial intelligence models for the following purposes:</p>
@@ -104,7 +104,7 @@ Processed and transformed data (such as note summaries, reformulated questions, 
 <li>classification of User intent (note or question) — LLM models available through the providers listed in Section 5 (Tier 2),</li>
 <li>generation of note summaries — LLM models available through the providers listed in Section 5 (Tier 2),</li>
 <li>generation of answers to User questions based on saved notes — LLM models available through the providers listed in Section 5 (Tier 2),</li>
-<li>text-to-speech synthesis (reading responses aloud) — Google Cloud Text-to-Speech or Microsoft Azure Text-to-Speech services; speech synthesis is performed on text generated by the Controller’s system, not on raw User data.</li>
+<li>text-to-speech synthesis (reading responses aloud) — Microsoft Azure Text-to-Speech or Google Cloud Text-to-Speech services; speech synthesis is performed on text generated by the Controller’s system, not on raw User data.</li>
 </ol>
 </li>
 <li>
@@ -127,7 +127,7 @@ Processed and transformed data (such as note summaries, reformulated questions, 
 a) Hetzner Online GmbH (Germany) — hosting the application server serving Users from the European Economic Area,
 b) Hetzner Cloud Inc. (United States) — hosting the application server serving Users from outside the European Economic Area,
 c) Neon Inc. — PostgreSQL database hosting (European Union region — Frankfurt for EEA Users; United States region for non-EEA Users),
-d) Amazon Web Services Inc. (S3) — storage of generated audio responses (text-to-speech cache); stored data does not contain raw User recordings but only audio files generated by the Controller’s system.</p>
+d) Amazon Web Services Inc. (S3) — caching of generic, pre-defined system audio phrases used in the application interface (e.g. “Saved”, “Let me search”, “Checking…”). These cached files are not derived from, and do not contain, any User content — they are static responses generated once by the Controller’s text-to-speech system. Audio responses to actual User queries are not stored on S3 and are delivered only in real time during the session.</p>
 </li>
 <li>
 <p>Artificial intelligence service providers — Tier 1 (raw data processing):
@@ -135,15 +135,15 @@ a) Microsoft Corporation (Azure OpenAI Service) — transcription of voice recor
 </li>
 <li>
 <p>Artificial intelligence service providers — Tier 2 (derived data processing):
-a) OpenAI, L.L.C. (United States) — intent classification, summary and response generation; data processed via the OpenAI API under terms that exclude the use of data for model training,
-b) Groq, Inc. (United States) — intent classification, summary and response generation; data processed via the Groq API,
-c) Google LLC (United States) — intent classification, summary and response generation; data processed via the Google Cloud AI API,
-d) Microsoft Corporation (Azure OpenAI Service) — intent classification, summary and response generation.</p>
+a) Microsoft Corporation (Azure OpenAI Service) — intent classification, summary and response generation (primary provider),
+b) Google LLC (United States) — intent classification, summary and response generation; data processed via the Google Gemini API,
+c) OpenAI, L.L.C. (United States) — intent classification, summary and response generation (secondary/fallback provider); data processed via the OpenAI API under terms that exclude the use of data for model training,
+d) Groq, Inc. (United States) — intent classification, summary and response generation (secondary/fallback provider); data processed via the Groq API.</p>
 </li>
 <li>
 <p>Text-to-speech service providers:
-a) Google LLC (Google Cloud Text-to-Speech) — speech synthesis on text generated by the Controller’s system,
-b) Microsoft Corporation (Azure Text-to-Speech) — speech synthesis on text generated by the Controller’s system.</p>
+a) Microsoft Corporation (Azure Text-to-Speech) — speech synthesis on text generated by the Controller’s system (primary provider),
+b) Google LLC (Google Cloud Text-to-Speech) — speech synthesis on text generated by the Controller’s system (secondary provider).</p>
 </li>
 <li>
 <p>Payment service providers:

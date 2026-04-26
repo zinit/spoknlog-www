@@ -1,0 +1,52 @@
+# SpoknLog
+
+> SpoknLog is an AI voice notes app for iPhone. It lets people record notes, meeting decisions, reminders, ideas, and everyday details by voice, then ask about them later in plain language.
+
+## Primary Domain
+
+https://spoknlog.com/
+
+## Key Pages
+
+- https://spoknlog.com/ - Product homepage for SpoknLog.
+- https://spoknlog.com/use-cases/ - Use case index.
+- https://spoknlog.com/use-cases/meeting-notes/ - Use case page for capturing and retrieving meeting notes.
+- https://spoknlog.com/use-cases/voice-reminders/ - Use case page for creating reminders by voice.
+- https://spoknlog.com/use-cases/searchable-voice-notes/ - Use case page for searchable AI voice notes.
+- https://spoknlog.com/compare/ - Comparison index.
+- https://spoknlog.com/compare/apple-voice-memos/ - Comparison page for people evaluating SpoknLog against Apple Voice Memos.
+- https://spoknlog.com/compare/voice-recorder-apps/ - Comparison page for people evaluating SpoknLog against ordinary voice recorder apps.
+- https://spoknlog.com/privacy/ - Privacy policy.
+- https://spoknlog.com/terms/ - Terms of service.
+
+## Product Summary
+
+SpoknLog turns spoken notes into searchable text and AI summaries. Users can later ask natural-language questions such as "What did the client say about the deadline?" or "When is my dentist appointment?" and get answers based on their own notes.
+
+## Languages
+
+The interface and voice transcription work in nine languages: English, Polish, German, Spanish, French, Italian, Slovak, Romanian, and Ukrainian. Answers are returned in the same language as the question.
+
+## Hands-free
+
+Answers are spoken back through text-to-speech, so notes can be retrieved without looking at the screen. This is useful while driving, cooking, or walking.
+
+## Reminders
+
+Reminders are created by voice, for example "remind me tomorrow at 9 to call Mark". SpoknLog understands natural date and time phrases in the user's language and timezone, then delivers a push notification at the right time. Each reminder stays attached to the surrounding voice note for context.
+
+## Pricing
+
+Free tier: 30 voice actions per month. A note or a question each count as one action. Pro: $6.99 per month for unlimited actions, longer recordings, premium voice quality, and note export. Subscriptions are managed through the iOS App Store.
+
+## Export
+
+Notes can be exported. Pro users can also sync notes to iCloud Drive as Markdown files compatible with note tools such as Obsidian.
+
+## Privacy Summary
+
+Voice is transcribed, then audio is deleted. SpoknLog keeps transcription text, AI summaries, and a search index so users can retrieve their own information. SpoknLog does not sell user data or train AI models on user notes.
+
+## App Store
+
+https://apps.apple.com/app/spoknlog/id6751816556
